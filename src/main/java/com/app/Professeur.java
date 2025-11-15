@@ -1,30 +1,27 @@
 package com.app;
 
-
 import java.time.LocalDate;
 
-public class Student {
+public class Professeur {
     private int id;
     private String firstName;
     private String lastName;
     private LocalDate birthDate;
     private String email;
     private String phone;
-    private String group;
-    private Tuteur tuteur;
+    private String specialty;
 
-    public Student(int id, String firstName, String lastName, LocalDate birthDate,
-                   String email, String phone, String group, Tutor tutor) {
+    public Professeur(int id, String firstName, String lastName, LocalDate birthDate,
+                   String email, String phone, String specialty) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
         this.email = email;
         this.phone = phone;
-        this.group = group;
-        this.tuteur = tuteur;
+        this.specialty = specialty;
     }
 
+
     public int getId() { return id; }
-    public String getGroup() { return group; }
 }
